@@ -2,30 +2,74 @@
 <html>
     <head>
         <title>
-            My First Webpage
+            Telemedicine Application
         </title>
         <meta charset="UTF-8">
         <meta name="description" content="This is my first web page">
+        <!--embedded styling-->
+        <style>
+            h1 {
+                background-color: rgb(0, 124, 130);
+            }
+        </style>
+        <!--external styling-->
+        <link type="text/css" rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>This is my first heading</h1>
-        <!--paragraph -->
-        <p>
-            This is a paragraph
-        </p>
         
-     <!--lists-->
-        <ol type=".">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-        <!--Unordered list-->
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            </ul>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>Telemedicine Application </h1>
+                <p>Get medical care from the comfort of your own home</p>
+                <button>Book an Appointment</button>
+            </section>
+            <section class="features">
+                <h2>Our Features</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-video"></i>
+                        <h3>Video Consultations</h3>
+                        <p>Conduct virtual consultations with our doctors</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <h3>Secure Messaging</h3>
+                        <p>Communicate with our doctors and staff securely</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-lock"></i>
+                        <h3>Electronic Prescriptions</h3>
+                        <p>Get prescriptions sent directly to your pharmacy</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="doctors">
+                <h2>Our Doctors</h2>
+                <ul>
+                    <li>
+                        <img src="Doctor1.jpg" alt="Doctor 1">
+                        <h3>Dr. John Smith</h3>
+                        <p>Primary Care Physician</p>
+                    </li>
+                    <li>
+                        <img src="Doctor2.jpg" alt="Doctor 2">
+                        <h3>Dr. Jane Doe</h3>
+                        <p>Specialist in Dermatology</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        
         <!--Forms--> 
         <form action="collection" method="get">
             <label for="name" >Name:</label>
@@ -66,5 +110,8 @@
         <br/>
         <!--link-->
         <a href="https://google.com">Click here to visit page.</a>
+        <footer>
+            <p>&copy; 2024 Juliet Mariita</p>
+        </footer>
     </body>
 </html>
